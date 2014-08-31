@@ -17,6 +17,11 @@ var app = app || {};
             author:         'Unknown',
             releaseDate:    'Unknown',
             keywords:       'none'
+        },
+
+        parse: function (res) {
+            res.id = res._id;
+            return res;
         }
     });
 })();
